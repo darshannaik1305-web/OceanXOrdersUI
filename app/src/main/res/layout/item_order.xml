@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#1F1B2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Truck Icon -->
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_compass"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Vehicle Name -->
+
+        <TextView
+            android:id="@+id/txtVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Four Wheeler"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+        <!-- Order ID -->
+
+        <TextView
+            android:id="@+id/txtOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ORD12345"
+            android:textColor="#DDDDDD"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Location -->
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jhansi, India"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Price -->
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹229"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Invoice"
+                android:textColor="#000000"
+                android:backgroundTint="#D8B4FE"/>
+
+            <Button
+                android:id="@+id/btnBookAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Book Again"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D8B4FE"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
